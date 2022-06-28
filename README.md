@@ -18,9 +18,11 @@ Create a DNS server that will parse the subdomains as a payload to execute in a 
 
 ## Instructions
 
+*This demo is all done locally. Can change parameters in script as I haven't implemented arguments yets*
+
 pip install dnslib - Install package with pip (python3) to run DNS server
 
-python3 main.py - Run DNS server with python3
+python3 main.py --port 1234 --udp - Run DNS server with python3
 
 ./execute.sh "echo hi" - Execute command via DNS
 
@@ -29,6 +31,7 @@ python3 main.py - Run DNS server with python3
 - Output goes to multiple records by cutting into chunks
 - Compress output with zip before encoding
 - Create actual shell instead of one shot commands
+- Add parameters for scripts
 
 ## Acknowledgements
 
